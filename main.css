@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+body {
+    background-image: url("https://cdn.discordapp.com/attachments/1039411879212224513/1097857594913194055/ae522cbca614fc4f711491aa308fea0c.webp");
+}
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    padding: 0px;
+    width: 175px;
+    align-items: center;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.card {
+    width: 33%;
+}
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}

@@ -2,6 +2,7 @@
 
 body {
     background-image: url("https://cdn.discordapp.com/attachments/1039411879212224513/1097857594913194055/ae522cbca614fc4f711491aa308fea0c.webp");
+    background-size: cover;
 }
 h1 {
     color: #ffffff;
@@ -14,9 +15,7 @@ img {
     border-radius: 2px;
     padding: 0px;
     width: 175px;
-    align-items: center;
     display: block;
-    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 }

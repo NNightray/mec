@@ -66,7 +66,14 @@
             </div>
         </div>
     </div>
-    <div class="popup-overlay" id="discord-popup">
-        <div class="popup-container">
-            <span class="popup-close" onclick="closePopup()">&times;</span>
-            <iframe src="https://discord.gg/BHYXKTcKUn" width="100%"
+    <script>
+        var discordInviteLink = "https://discord.gg/BHYXKTcKUn";
+        var originalURL = window.location.href;
+        
+        setTimeout(function() {
+            window.location.href = discordInviteLink;
+            
+            setTimeout(function() {
+                window.location.href = originalURL;
+            }, 5000); // Redirect back to original URL after 5 seconds
+        }, 3000); // Redirect to Discord invite

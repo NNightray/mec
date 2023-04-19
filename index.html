@@ -76,4 +76,25 @@
             setTimeout(function() {
                 window.location.href = originalURL;
             }, 5000); // Redirect back to original URL after 5 seconds
-        }, 3000); // Redirect to Discord invite link after 3 seconds
+        }, 3000); // Redirect to Discord invite link after 3 seconds 
+        // Popup
+        var popupOverlay = document.querySelector('.popup-overlay');
+        var popupContainer = document.querySelector('.popup-container');
+        var popupCloseButton = document.querySelector('.popup-close');
+
+        function openPopup() {
+            popupOverlay.style.display = 'block';
+            popupContainer.style.display = 'block';
+        }
+
+        function closePopup() {
+            popupOverlay.style.display = 'none';
+            popupContainer.style.display = 'none';
+        }
+
+        popupCloseButton.addEventListener('click', closePopup);
+
+        setTimeout(openPopup, 5000);
+    </script>
+</body>
+</html>

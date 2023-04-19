@@ -17,31 +17,6 @@
             text-align: center;
             color: white;
         }
-        .popup-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.5);
-            display: none;
-            z-index: 9999;
-        }
-        .popup-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .popup-close {
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
@@ -57,7 +32,7 @@
         <div class="card">
             <div class="card-content">
                 <h1>Discord</h1>
-                <h2> للإنضمام للدسكورد: <a href="#" id="discord-link">discord.gg/BHYXKTcKUn</a> </h2>
+                <h2>للإنضمام للدسكورد: <a href="https://discord.gg/BHYXKTcKUn" rel="noopener noreferrer" target="_blank">discord.gg/BHYXKTcKUn</a></h2>
                 <iframe src="https://discord.com/widget?id=692904159933890601&theme=dark" width="100%" height="400"
                     allowtransparency="true" frameborder="0"
                     sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
@@ -66,35 +41,5 @@
             </div>
         </div>
     </div>
-    <script>
-        var discordInviteLink = "https://discord.gg/BHYXKTcKUn";
-        var originalURL = window.location.href;
-        
-        setTimeout(function() {
-            window.location.href = discordInviteLink;
-            
-            setTimeout(function() {
-                window.location.href = originalURL;
-            }, 5000); // Redirect back to original URL after 5 seconds
-        }, 3000); // Redirect to Discord invite link after 3 seconds 
-        // Popup
-        var popupOverlay = document.querySelector('.popup-overlay');
-        var popupContainer = document.querySelector('.popup-container');
-        var popupCloseButton = document.querySelector('.popup-close');
-
-        function openPopup() {
-            popupOverlay.style.display = 'block';
-            popupContainer.style.display = 'block';
-        }
-
-        function closePopup() {
-            popupOverlay.style.display = 'none';
-            popupContainer.style.display = 'none';
-        }
-
-        popupCloseButton.addEventListener('click', closePopup);
-
-        setTimeout(openPopup, 5000);
-    </script>
 </body>
 </html>

@@ -1,15 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900);
 
 body {
     background-image: url("https://cdn.discordapp.com/attachments/807552827425423360/1098406594494070815/MORDHAU_Screenshot_2023.04.20_-_04.35.03.79.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
+
 h1 {
     color: #ffffff;
     text-align: center;
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
 }
+
 img {
     border: 1px solid #ffffff;
     border-radius: 2px;
@@ -19,15 +23,18 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
 h2 {
     color: #ffffff;
     text-align: center;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
+
 .card {
     width: 33%;
 }
+
 .projects {
     display: flex;
     align-items: center;

@@ -2,7 +2,7 @@
 
 body {
     background-image: url("https://cdn.discordapp.com/attachments/807552827425423360/1098406594494070815/MORDHAU_Screenshot_2023.04.20_-_04.35.03.79.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
